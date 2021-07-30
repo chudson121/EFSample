@@ -14,8 +14,9 @@ namespace EFSample.Repository
             
             builder.HasKey(x => x.CompanyId);// Make the Primary Key associated with this property
 
-            builder.HasMany(f => f.Links);
-            
+            builder.HasMany(f => f.Links).WithOne();
+
+            builder.OwnsOne(f => f.HeadquarterAddress);
           
             
             //Column Attributes

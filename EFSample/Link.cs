@@ -13,5 +13,8 @@ namespace EFSample
         public string Name { get; set; }
         public string Urls { get; set; }
         
+        //public Company Company { get; set; }
+        //public Guid CompanyId { get; set; }
+        
     }
 }

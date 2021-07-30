@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -13,7 +14,7 @@ namespace EFSample
         public string Name { get; set; } = null!;
         public Address? HeadquarterAddress { get; set; }
         
-        public List<Link> Links { get; set; } = new();
+        public List<Link> Links { get; set; }
         
 
         public bool IsActive { get; set; }

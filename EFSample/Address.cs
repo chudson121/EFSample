@@ -7,9 +7,9 @@ namespace EFSample
 {
     public class Address : ValueObject
     {
-        [Key, Column(Order = 1)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+        //[Key, Column(Order = 1)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //public Guid Id { get; set; }
         public string Street { get; private set; }
         public string City { get; private set; }
         public string State { get; private set; }
